@@ -11,4 +11,6 @@
     <a href="index.php">home</a>
     <a href="about.php">about</a>
     <a href="location.php">location</a>
+    <a href="login.php">login</a>
+    <a href="logout.php">logout</a>
   </nav>
