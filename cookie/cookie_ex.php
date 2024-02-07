@@ -1,7 +1,7 @@
 <?php
 $cookieName = 'city';
 $cookieValue = 'seoul';
-setcookie($cookieName, $cookieValue, time()+60);  /* 1s */
+setcookie($cookieName, $cookieValue, time()-60);  /* 1s */
 ?>
 
 <!DOCTYPE html>
