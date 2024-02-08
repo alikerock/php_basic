@@ -4,7 +4,7 @@
   include('../inc/function.php');  
   echo $_SESSION['email'];
   if($_SESSION['email'] != USER_NAME){
-    redirect('./login.php');
+    redirect('../login.php');
   }
 ?>
 <!DOCTYPE html>
