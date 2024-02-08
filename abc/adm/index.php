@@ -15,7 +15,7 @@
 </head>
 <body>
   <h1>관리자 페이지</h1>
-  <h2>***님 반갑습니다.</h2>
+  <h2><?= $_SESSION['email']; ?>님 반갑습니다.</h2>
   <p>
     <a href="logout.php">logout</a>
   </p>
