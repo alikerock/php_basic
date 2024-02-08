@@ -4,4 +4,14 @@
     print_r($value);
     echo '</pre>';
   }
+
+  function authenticate_user($email,$password){
+    if($email == USER_NAME && $password == PASSWORD){
+      return true;
+    }
+  }
+
+  function redirect($url){
+    header("Location:$url");
+  }
 ?>
