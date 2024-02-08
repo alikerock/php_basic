@@ -1,6 +1,6 @@
 <?php
   function view($name, $model){
     // global $title;
-    require("view/$name.view.php");
+    require("view/layout.view.php");
   }
 ?>

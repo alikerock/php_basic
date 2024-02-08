@@ -3,5 +3,5 @@
 
   $title = 'Hello World';
   
-  view('index',$title);
+  view('about','About us');
 ?>
