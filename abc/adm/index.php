@@ -1,11 +1,10 @@
 <?php
   session_start();
-  include('../config.php');  
-  include('../inc/function.php');  
-  echo $_SESSION['email'];
-  if($_SESSION['email'] != USER_NAME){
-    redirect('../login.php');
-  }
+  require_once('../config.php');  
+  require_once('../inc/function.php');  
+
+  ensure_user_is_authenticated();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

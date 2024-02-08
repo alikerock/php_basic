@@ -3,6 +3,11 @@
   include('inc/header.php');
   include('config.php');  
   include('inc/function.php');
+  
+  if(user_is_authenticated){ //이미 관리자로 로그인한 유저를 관리자페이지로 이동.
+    redirect('adm/index.php');
+    die();
+  }
 
   if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
